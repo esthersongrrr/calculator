@@ -1,2 +1,2 @@
-# calculator
-Simple Java Calculator
+# Calculator
+
