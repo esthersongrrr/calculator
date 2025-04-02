@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CalculatorService {
+public class Calculator {
     private final List<OperationStrategy> strategies;
 
     @Autowired
-    public CalculatorService(List<OperationStrategy> strategies) {
+    public Calculator(List<OperationStrategy> strategies) {
         this.strategies = strategies;
     }
 

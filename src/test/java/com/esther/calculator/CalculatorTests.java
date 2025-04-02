@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 public class CalculatorTests {
-    private CalculatorService calculator;
+    private Calculator calculator;
 
     @BeforeEach
     public void setUp() {
-        calculator = new CalculatorService(Arrays.asList(
+        calculator = new Calculator(Arrays.asList(
                 new AddOperation(),
                 new SubstractOperation(),
                 new MultiplyOperation(),

@@ -2,7 +2,7 @@ package com.esther.calculator.controller;
 
 import com.esther.calculator.dto.ChainInput;
 import com.esther.calculator.model.Operation;
-import com.esther.calculator.service.CalculatorService;
+import com.esther.calculator.service.Calculator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/v1/calculator")
 public class CalculatorController {
     @Autowired
-    private CalculatorService calculator;
+    private Calculator calculator;
 
     @PostMapping("/calculate")
     public Number calculate(@RequestParam Operation operation,
